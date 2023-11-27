@@ -28,3 +28,6 @@ jobs:
         with:
           push: true
           tags: teyik0/bun-test:latest
+
+      - name: Trigger Deployment
+        run: curl http://localhost:8080/deploy
